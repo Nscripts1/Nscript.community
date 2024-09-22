@@ -1,1 +1,132 @@
-this website is outdated please head over to https://discord.gg/XnQ7CJJ55B for the new website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdated Website</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+            background: linear-gradient(135deg, #ff0000, #0000ff); /* Fallback static gradient */
+            animation: gradientAnimation 10s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 2.5s forwards 0.5s;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeInButtons 3s forwards 1s;
+        }
+
+        .button {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* New website button */
+        .button-new-website {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+        }
+
+        .button-new-website:hover {
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+        }
+
+        /* Discord button */
+        .button-discord {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        }
+
+        .button-discord:hover {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInButtons {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This website is outdated</h1>
+        <div class="buttons">
+            <a href="https://bit.ly/scythesploits" class="button button-new-website">New Website</a>
+            <a href="https://discord.gg/XnQ7CJJ55B" class="button button-discord">Discord Server</a>
+        </div>
+    </div>
+</body>
+</html>
