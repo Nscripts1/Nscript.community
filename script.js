@@ -16,8 +16,8 @@ function saveKeys() {
 
 // Add a new key
 function addKey() {
-    const newKey = document.getElementById('newKey').value;
-    if (newKey) {
+    const newKey = document.getElementById('newKey').value.trim();
+    if (newKey && !keys.includes(newKey)) {
         keys.push(newKey);
         document.getElementById('newKey').value = '';
         saveKeys();
